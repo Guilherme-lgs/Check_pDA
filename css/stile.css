@@ -12,7 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  flex-direction: column; /* Adicionando essa linha para empilhar verticalmente */
+  flex-direction: column; 
 }
 
 .container {
@@ -27,8 +27,8 @@ body {
 }
 
 .newContainer {
-  background-color: #fafafa; /* Definindo a mesma cor de fundo para a nova div */
-  border-radius: 14px; /* Para manter o estilo visual */
+  background-color: #fafafa; 
+  border-radius: 14px; 
   max-width: 400px;
   width: 100%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
@@ -92,9 +92,9 @@ body {
 
 .form-content {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100px; /* Defina uma altura */
+  justify-content: center;
+  align-items: center; 
+  height: 100px; 
 
 }
 

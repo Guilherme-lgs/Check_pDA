@@ -13,15 +13,15 @@ form.addEventListener("submit", (event) => {
 
     if (username.value && idade.value > 0) {
         if (editIndex === null) {
-            // Adiciona novo cadastro ao array
+           
             cadastros.push({ nome: username.value, idade: idade.value });
         } else {
-            // Edita cadastro existente
+           
             cadastros[editIndex] = { nome: username.value, idade: idade.value };
             editIndex = null;
         }
 
-        // Limpa os campos e exibe os cadastros
+      
         username.value = "";
         idade.value = "";
         displayCadastros();
@@ -29,7 +29,7 @@ form.addEventListener("submit", (event) => {
 });
 
 function displayCadastros() {
-    cadastroList.innerHTML = ""; // Limpa a exibição atual
+    cadastroList.innerHTML = ""; 
 
     cadastros.forEach((cadastro, index) => {
         const div = document.createElement("div");
@@ -44,7 +44,7 @@ function displayCadastros() {
     });
 }
 
-//  editar o cadastro
+
 function editCadastro(index) {
     const cadastro = cadastros[index];
     username.value = cadastro.nome;
@@ -52,13 +52,13 @@ function editCadastro(index) {
     editIndex = index;
 }
 
-// excluir o cadastro
+
 function deleteCadastro(index) {
     cadastros.splice(index, 1);
     displayCadastros();
 }
 
-// Validação  nome
+
 function usernamecheck() {
     const usernameValue = username.value;
     if (usernameValue === "") {
@@ -69,7 +69,7 @@ function usernamecheck() {
     }
 }
 
-// Validação idade
+
 function idadeCheck() {
     const idadeValue = parseInt(idade.value, 10);
     if (!idadeValue) {
@@ -82,7 +82,7 @@ function idadeCheck() {
     }
 }
 
-// Função para exibir mensagem de erro
+
 function erroInput(input, message) {
     const formItem = input.parentElement;
     const textMessage = formItem.querySelector("a");
