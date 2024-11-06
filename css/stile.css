@@ -3,10 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  
 }
 
 body {
-  background: #140300;
+  background: #d84126;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +23,7 @@ body {
   width: 100%;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   overflow: hidden;
-  margin-bottom: 20px; /* Espaçamento inferior da primeira div */
+  margin-bottom: 20px; 
   
 }
 
@@ -40,6 +41,7 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 12px;
+  
   
 }
 
@@ -127,4 +129,6 @@ body {
   margin-top: 12px;
 }
 
+
+ 
   
