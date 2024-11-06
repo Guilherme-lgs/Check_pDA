@@ -35,10 +35,16 @@ function displayCadastros() {
         const div = document.createElement("div");
         div.classList.add("cadastro-item");
         div.innerHTML = `
-            <p>Nome do Pet: ${cadastro.nome}</p>
-            <p>Idade do Pet: ${cadastro.idade}</p>
-            <button onclick="editCadastro(${index})">Editar</button>
+        <div class="st-btn" >
+         <div>  
+        <p>Nome do Pet: ${cadastro.nome}</p>
+        <p>Idade do Pet: ${cadastro.idade}</p>
+           </div>
+      <div class="rs-btn">     
+        <button onclick="editCadastro(${index})">Editar</button>
             <button onclick="deleteCadastro(${index})">Excluir</button>
+      </div>
+        </div>
         `;
         cadastroList.appendChild(div);
     });
@@ -89,3 +95,4 @@ function erroInput(input, message) {
     textMessage.innerText = message;
     formItem.className = "form-content error";
 }
+

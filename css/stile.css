@@ -40,6 +40,7 @@ body {
   text-align: center;
   color: #ffffff;
   border-radius: 12px;
+  
 }
 
 .form {
@@ -101,3 +102,29 @@ body {
 .hide{
   display: none;
 }
+
+.st-btn{
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.rs-btn {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.rs-btn button{
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff0c0cd0;
+  border-radius: 10px;
+  padding: 5px;
+  border: 0;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+  
